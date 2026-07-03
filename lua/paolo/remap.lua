@@ -67,8 +67,6 @@ map("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
--- Multi cursor thingy
--- map({ "n", "x", "i" }, '<C-S-d>', 'mciw*<Cmd>nohl<CR>', { remap = true })
 
 vim.keymap.set({ "n", "x", "i" }, "<C-S-d>", function()
     vscode.with_insert(function()
